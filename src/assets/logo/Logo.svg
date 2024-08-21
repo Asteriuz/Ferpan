@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2"
+  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 341.78 149.55">
+  <text transform="translate(0 109.22)" font-family="Impact, Impact" font-size="122">
+    <tspan x="0" y="0" fill="#f5811e">Fe</tspan>
+    <tspan x="110.92" y="0" fill="#293d93" letter-spacing="0em">r</tspan>
+    <tspan x="154.58" y="0" fill="#f5811e" letter-spacing="0em">pan</tspan>
+  </text>
+  <text transform="translate(10.1 142.49)" font-family="ArialMT, Arial" font-size="17.9">
+    <tspan x="0" y="0">COMÉRCIO E</tspan>
+    <tspan x="115.38" y="0" letter-spacing="-.06em"></tspan>
+    <tspan x="119.37" y="0">A</tspan>
+    <tspan x="131.31" y="0" letter-spacing="-.02em">R</tspan>
+    <tspan x="143.92" y="0">TE</tspan>
+    <tspan x="166.79" y="0" letter-spacing="-.06em">F</tspan>
+    <tspan x="176.74" y="0" letter-spacing="-.07em">A</tspan>
+    <tspan x="187.35" y="0" letter-spacing="-.02em">T</tspan>
+    <tspan x="197.96" y="0" letter-spacing="0em">OS DE FERRO</tspan>
+  </text>
+  <rect x="4.98" y="116.03" width="147.69" height="4.41" fill="#293d93"/>
+  <rect x="187.89" y="116.03" width="149.88" height="4.41" fill="#293d93"/>
+</svg>
