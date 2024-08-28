@@ -21,7 +21,7 @@ export default function Footer() {
           <div className="obs-hidden mb-8 ml-0 mt-0 md:m-4 md:mb-0 md:mr-10 md:pt-0 lg:ml-0 lg:mr-16">
             <Link
               aria-label="Ir para o início"
-              href="#start"
+              href="#hero"
               className="flex justify-center align-middle"
             >
               <Logo

@@ -25,7 +25,6 @@ export default function Header() {
                 <HiMiniBars3CenterLeft
                   id="drawer-open-icon"
                   className="h-8 w-8 fill-white"
-
                 />
 
                 <HiMiniXMark
@@ -76,10 +75,10 @@ export default function Header() {
               </ul>
             </div>
           </div>
-          <Link aria-label="Home" href="/">
+          <Link aria-label="Home" href="#hero">
             <Logo
               id="logo-nav"
-              className="w-44 shrink-0 cursor-pointer duration-300 ease-in-out hover:scale-110 md:hover:scale-110 translate-x-1/2"
+              className="w-44 shrink-0 translate-x-1/2 cursor-pointer duration-300 ease-in-out hover:scale-110 md:hover:scale-110"
             />
           </Link>
         </div>
@@ -88,7 +87,7 @@ export default function Header() {
             <li>
               <Link
                 href="#hero"
-                className="hover:shadow-primaryUnderline shadow-none cursor-pointer rounded-none px-6 py-3 transition-all duration-300 hover:bg-transparent hover:bg-none ease-in-out"
+                className="cursor-pointer px-6 py-3 transition-colors duration-300 hover:text-primary"
               >
                 HOME
               </Link>
@@ -96,7 +95,7 @@ export default function Header() {
             <li>
               <Link
                 href="#about"
-                className="hover:shadow-primaryUnderline shadow-none cursor-pointer rounded-none px-6 py-3 transition-all duration-300  hover:bg-transparent hover:bg-none"
+                className="cursor-pointer px-6 py-3 transition-colors duration-300 hover:text-primary "
               >
                 EMPRESA
               </Link>
@@ -104,7 +103,7 @@ export default function Header() {
             <li>
               <Link
                 href="#produtos"
-                className="hover:shadow-primaryUnderline shadow-none cursor-pointer rounded-none px-6 py-3 transition-all duration-300  hover:bg-transparent hover:bg-none"
+                className="cursor-pointer px-6 py-3 transition-colors duration-300 hover:text-primary "
               >
                 PRODUTOS
               </Link>
@@ -112,7 +111,7 @@ export default function Header() {
             <li>
               <Link
                 href="#contato"
-                className="hover:shadow-primaryUnderline shadow-none cursor-pointer rounded-none px-6 py-3 transition-all duration-300 hover:bg-transparent hover:bg-none"
+                className="cursor-pointer px-6 py-3 transition-colors duration-300 hover:text-primary"
               >
                 CONTATO
               </Link>
@@ -124,7 +123,7 @@ export default function Header() {
             aria-label="Fale Conosco"
             href="https://wa.me/5511966017667"
             target="_blank"
-            className="hover:bg-primary-hover flex items-center gap-2 rounded-lg bg-primary p-3 text-center text-base font-bold text-white shadow-md duration-300 ease-in-out hover:shadow-xl sm:px-7 sm:py-3 sm:hover:-translate-y-2 sm:mr-10"
+            className="flex items-center gap-2 rounded-lg bg-primary p-3 text-center text-base font-bold text-white shadow-md duration-300 ease-in-out hover:bg-primary-hover hover:shadow-xl sm:mr-10 sm:px-7 sm:py-3 sm:hover:-translate-y-2"
           >
             <FaWhatsapp className="text-4xl sm:text-3xl" />
             <p className="hidden items-center justify-center text-lg sm:flex">
