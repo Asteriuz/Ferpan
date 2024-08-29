@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <nav
       id="nav"
-      className="fixed z-40 flex w-full justify-center  bg-white transition-all duration-500 ease-in-out"
+      className="fixed z-40 flex w-full justify-center shadow-xl  bg-white transition-all duration-500 ease-in-out"
     >
       <div
         id="nav-inner"

@@ -16,9 +16,9 @@ import {
 export default function Footer() {
   return (
     <footer className="bg-background text-base lg:pt-8">
-      <div className="bg-background mx-auto w-full max-w-screen-xl p-4">
-        <div className="md:flex md:justify-between">
-          <div className="obs-hidden mb-8 ml-0 mt-0 md:m-4 md:mb-0 md:mr-10 md:pt-0 lg:ml-0 lg:mr-16">
+      <div className="bg-background mx-auto w-full max-w-screen-xl p-2">
+        <div className="lg:flex lg:justify-between">
+          <div className="obs-hidden mb-4 ml-0 mt-2 lg:m-4 lg:mb-0 lg:pt-0 lg:ml-0 lg:mr-16">
             <Link
               aria-label="Ir para o início"
               href="#hero"
