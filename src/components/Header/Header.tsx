@@ -50,7 +50,7 @@ export default function Header() {
                 </li>
                 <li>
                   <Link
-                    href="#about"
+                    href="#sobre"
                     className="drawer-button cursor-pointer px-6 py-3"
                   >
                     EMPRESA
@@ -94,7 +94,7 @@ export default function Header() {
             </li>
             <li>
               <Link
-                href="#about"
+                href="#sobre"
                 className="cursor-pointer px-6 py-3 transition-colors duration-300 hover:text-primary "
               >
                 EMPRESA
@@ -119,7 +119,7 @@ export default function Header() {
           </ul>
         </div>
         <div className="navbar-end z-50 hidden lg:flex">
-          <a
+          <Link
             aria-label="Fale Conosco"
             href="https://wa.me/5511966017667"
             target="_blank"
@@ -129,7 +129,7 @@ export default function Header() {
             <p className="hidden items-center justify-center text-lg sm:flex">
               FALE CONOSCO
             </p>
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

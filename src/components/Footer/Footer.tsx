@@ -31,7 +31,7 @@ export default function Footer() {
               />
             </Link>
           </div>
-          <div className="grid grid-cols-1 gap-8 text-center sm:grid-cols-1 sm:gap-6 md:w-10/12 md:grid-cols-3 md:gap-10 md:text-left lg:grid-cols-[2fr,2fr,2fr,1fr]">
+          <div className="grid grid-cols-1 gap-8 text-center lg:w-10/12 lg:gap-10 lg:text-left lg:grid-cols-[2fr,2fr,2fr,1fr]">
             <FooterCategory
               title="Contato"
               delay={3}
@@ -173,30 +173,30 @@ export default function Footer() {
           <div className="text-md order-last flex flex-col md:order-first md:-mr-10 md:text-left">
             <span>
               © 2024
-              <a
+              <Link
                 target="_blank"
                 href="https://github.com/Asteriuz"
                 className="hover:underline"
               >
                 {" "}
                 Asteriuz™{" "}
-              </a>
+              </Link>
             </span>
             All Rights Reserved.
           </div>
-          <a
+          <Link
             target="_blank"
             href="https://wa.me/5511966017667"
             className="bold hover:bg-primary-hover flex items-center justify-center gap-2  rounded-lg bg-primary p-4 text-center text-xl font-bold uppercase text-white shadow-lg duration-300 ease-in-out sm:text-2xl"
           >
             <IoLogoWhatsapp className="text-[40px]" />
             Fale Conosco
-          </a>
+          </Link>
           <div className="order-first mt-4 hidden justify-center space-x-5 sm:mt-0 md:order-last md:flex">
-            {/* <a target="_blank" href="https://wa.me/5511966017667">
+            {/* <Link target="_blank" href="https://wa.me/5511966017667">
               <IoLogoWhatsapp className="text-[40px] duration-300 ease-in-out hover:fill-green-500" />
               <span className="sr-only">Whatsapp</span>
-            </a> */}
+            </Link> */}
 
             <Link
               target="_blank"

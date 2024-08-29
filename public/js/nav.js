@@ -1,12 +1,42 @@
+/* -------------------------------------------------------------------------- */
+/*                              Scroll Functions                              */
+/* -------------------------------------------------------------------------- */
+
+let calcScrollValue = () => {
+  let scrollProgress = document.getElementById("progress");
+  let pos = document.documentElement.scrollTop;
+  let calcHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrollValue = Math.round((pos * 100) / calcHeight);
+
+  if (pos > 100) {
+    scrollProgress.style.display = "grid";
+    setTimeout(() => {
+      scrollProgress.style.opacity = 1;
+    }, 10);
+  } else {
+    scrollProgress.style.opacity = 0;
+    setTimeout(() => {
+      if (scrollProgress.style.opacity == 0) {
+        scrollProgress.style.display = "none";
+      }
+    }, 500);
+  }
+
+  scrollProgress.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+  });
+
+  scrollProgress.style.background = `conic-gradient(#f5811e ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+};
+
+let prevScrollpos = window.scrollY;
 let drawerToggle = document.getElementById("drawer-nav");
 let nav = document.getElementById("nav");
 let navInner = document.getElementById("nav-inner");
-let prevScrollpos = window.scrollY;
 
-/* -------------------------------------------------------------------------- */
-/*                            Hide nav when scroll                            */
-/* -------------------------------------------------------------------------- */
-window.onscroll = function () {
+let hideNav = () => {
   let currentScrollPos = window.scrollY;
   if (
     prevScrollpos > currentScrollPos ||
@@ -20,14 +50,18 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos;
 
   if (currentScrollPos > 48) {
-    // padding 12px height
-    nav.classList.add("backdrop-blur-md");
     navInner.style.padding = "12px 8px";
   } else {
-    nav.classList.remove("backdrop-blur-md");
     navInner.style.padding = "24px 8px";
   }
 };
+
+window.onscroll = function () {
+  calcScrollValue();
+  hideNav();
+};
+
+window.onload = calcScrollValue;
 
 /* -------------------------------------------------------------------------- */
 /*                                 Drawer Menu                                */
@@ -46,7 +80,6 @@ document.addEventListener("click", function (e) {
 });
 
 let drawerButton = document.getElementsByClassName("drawer-button");
-
 
 for (let i = 0; i < drawerButton.length; i++) {
   drawerButton[i].addEventListener("click", function () {

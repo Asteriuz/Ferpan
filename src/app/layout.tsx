@@ -60,8 +60,8 @@ export default function RootLayout({
       </body>
       {(DEV && (
         <>
-          <Script src="Ferpan/js/nav.js"></Script>
-          <Script src="Ferpan/js/util.js" defer></Script>
+          <Script src="ferpan/js/nav.js"></Script>
+          <Script src="ferpan/js/util.js" defer></Script>
         </>
       )) || (
         <>

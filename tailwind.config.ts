@@ -31,9 +31,6 @@ const config: Config = {
       ...defaultTheme.screens,
     },
     extend: {
-      boxShadow: {
-        primaryUnderline: "0 3px #d96900",
-      },
       colors: {
         semiblack: {
           DEFAULT: "#222",
@@ -44,6 +41,10 @@ const config: Config = {
         primary: {
           DEFAULT: "#f5811e",
           hover: "#d96900",
+        },
+        secondary: {
+          DEFAULT: "#293d93",
+          hover: "#1a2c6b",
         },
         transwhite: {
           DEFAULT: "#ffffff75",
