@@ -18,7 +18,7 @@ export default function Footer() {
     <footer className="bg-background text-base lg:pt-8">
       <div className="bg-background mx-auto w-full max-w-screen-xl p-2">
         <div className="lg:flex lg:justify-between">
-          <div className="obs-hidden mb-4 ml-0 mt-2 lg:m-4 lg:mb-0 lg:pt-0 lg:ml-0 lg:mr-16">
+          <div className="obs-hidden mb-4 ml-0 mt-2 lg:m-4 lg:mb-0 lg:ml-0 lg:mr-16 lg:pt-0">
             <Link
               aria-label="Ir para o início"
               href="#hero"
@@ -27,11 +27,11 @@ export default function Footer() {
               <Logo
                 id="logo-nav"
                 aria-label="Logo da Ferpan"
-                className="h-28 cursor-pointer my-6 md:my-0 duration-300 ease-in-out hover:scale-110 md:h-28 md:hover:scale-110"
+                className="my-6 cursor-pointer duration-300 ease-in-out hover:scale-110 md:my-0 h-24 md:hover:scale-110"
               />
             </Link>
           </div>
-          <div className="grid grid-cols-1 gap-8 text-center lg:w-10/12 lg:gap-10 lg:text-left lg:grid-cols-[2fr,2fr,2fr,1fr]">
+          <div className="grid grid-cols-1 gap-8 text-center lg:w-10/12 lg:grid-cols-[2fr,2fr,2fr,1fr] lg:gap-10 lg:text-left">
             <FooterCategory
               title="Contato"
               delay={3}
@@ -114,7 +114,7 @@ export default function Footer() {
                   renderIcon: (className) => (
                     <IoSubwayOutline className={className} />
                   ),
-                }
+                },
               ]}
             />
             <FooterCategory
@@ -187,7 +187,7 @@ export default function Footer() {
           <Link
             target="_blank"
             href="https://wa.me/5511966017667"
-            className="bold hover:bg-primary-hover flex items-center justify-center gap-2  rounded-lg bg-primary p-4 text-center text-xl font-bold uppercase text-white shadow-lg duration-300 ease-in-out sm:text-2xl"
+            className="bold flex items-center justify-center gap-2 rounded-lg  bg-primary p-4 text-center text-xl font-bold uppercase text-white shadow-lg duration-300 ease-in-out hover:bg-primary-hover sm:text-2xl"
           >
             <IoLogoWhatsapp className="text-[40px]" />
             Fale Conosco
