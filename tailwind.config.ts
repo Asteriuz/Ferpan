@@ -37,6 +37,8 @@ const config: Config = {
         },
         cinza: {
           DEFAULT: "#CBCBCD",
+          border: "#e1e1e",
+          text: "#6b6b6b"
         },
         primary: {
           DEFAULT: "#f5811e",

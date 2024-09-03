@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <div
       id="contato"
-      className="h-96 bg-cover bg-fixed bg-center bg-no-repeat"
+      className="h-96 bg-cover bg-scroll md:bg-fixed bg-center bg-no-repeat"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(${Background.src})`,
       }}
