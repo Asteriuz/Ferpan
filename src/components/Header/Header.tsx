@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <nav
       id="nav"
-      className="fixed z-40 flex w-full justify-center shadow-xl  bg-white transition-all duration-500 ease-in-out"
+      className="fixed z-40 flex w-full justify-center bg-white  shadow-xl transition-all duration-500 ease-in-out"
     >
       <div
         id="nav-inner"
@@ -43,7 +43,7 @@ export default function Header() {
                 <li className="mt-24 hover:bg-transparent">
                   <Link
                     href="#hero"
-                    className="drawer-button cursor-pointer px-6 py-3"
+                    className="side-link drawer-button cursor-pointer px-6 py-3"
                   >
                     HOME
                   </Link>
@@ -51,7 +51,7 @@ export default function Header() {
                 <li>
                   <Link
                     href="#sobre"
-                    className="drawer-button cursor-pointer px-6 py-3"
+                    className="side-link drawer-button cursor-pointer px-6 py-3"
                   >
                     EMPRESA
                   </Link>
@@ -59,7 +59,7 @@ export default function Header() {
                 <li>
                   <Link
                     href="#produtos"
-                    className="drawer-button cursor-pointer px-6 py-3"
+                    className="side-link drawer-button cursor-pointer px-6 py-3"
                   >
                     PRODUTOS
                   </Link>
@@ -67,7 +67,7 @@ export default function Header() {
                 <li>
                   <Link
                     href="#contato"
-                    className="drawer-button cursor-pointer px-6 py-3"
+                    className="side-link drawer-button cursor-pointer px-6 py-3"
                   >
                     CONTATO
                   </Link>

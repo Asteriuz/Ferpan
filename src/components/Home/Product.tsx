@@ -16,10 +16,18 @@ export default function Product() {
   return (
     <section
       id="produtos"
-      className="relative my-24 flex flex-col items-center justify-center gap-12 lg:gap-16 px-8"
+      className="relative my-8 lg:my-16 py-6 flex flex-col items-center justify-center gap-12 px-8 lg:gap-16"
     >
-      <h2 className="text-center text-5xl lg:text-[54px] font-bold tracking-wider">Nossos produtos</h2>
-      <div className="grid max-w-screen-xl grid-cols-1 lg:grid-cols-2 gap-y-12 lg:gap-y-24 gap-x-24 xl:grid-cols-3">
+      <div className="flex flex-col items-center justify-center gap-4">
+        <h3 className="text-center text-xl font-bold tracking-wider text-primary lg:text-2xl">
+          Qualidade Garantida
+        </h3>
+        <h2 className="text-center text-5xl font-bold tracking-wider lg:text-[54px]">
+          Nossos produtos
+        </h2>
+        <hr className="obs-hidden obs-visible mx-auto my-2 mt-6 h-1 w-52 rounded border-0 bg-primary"></hr>
+      </div>
+      <div className="grid max-w-screen-xl grid-cols-1 gap-x-24 gap-y-12 lg:grid-cols-2 lg:gap-y-24 xl:grid-cols-3">
         <ProductCard
           title="Eletrodo (6013/7018/inox/ferro fundido)"
           description="Eletrodos de alta qualidade para soldagem eficiente em aço carbono, inox e ferro fundido."

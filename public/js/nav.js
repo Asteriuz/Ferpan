@@ -8,7 +8,7 @@ let calcScrollValue = () => {
   let calcHeight =
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
-  let scrollValue = Math.round((pos * 100) / calcHeight);
+  let scrollValue = Math.round((pos * 101) / calcHeight);
 
   if (pos > 100) {
     scrollProgress.style.display = "grid";
@@ -40,7 +40,7 @@ let hideNav = () => {
   let currentScrollPos = window.scrollY;
   if (
     prevScrollpos > currentScrollPos ||
-    currentScrollPos < 96 ||
+    currentScrollPos < 112 ||
     drawerToggle.checked
   ) {
     nav.style.transform = "translateY(0)";
@@ -49,7 +49,7 @@ let hideNav = () => {
   }
   prevScrollpos = currentScrollPos;
 
-  if (currentScrollPos > 48) {
+  if (currentScrollPos > 72) {
     navInner.style.padding = "12px 8px";
   } else {
     navInner.style.padding = "24px 8px";

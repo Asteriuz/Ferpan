@@ -23,3 +23,9 @@
   font-size: 35px;
   color: #001a2e;
 }
+
+/* important background color */
+.side-link:active {
+  background-color: #f5811e !important;
+  color: #ffffff !important;
+}
