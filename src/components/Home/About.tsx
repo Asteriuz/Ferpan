@@ -9,12 +9,15 @@ import FadeInSection from "./Utils/FadeInSection";
 
 export default function About() {
   const [count, setCount] = useState(0);
+  const [isClient, setIsClient] = useState(false); // Add state to check if it's client-side
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
 
   useEffect(() => {
+    setIsClient(true); // Set isClient to true after the component mounts
+
     if (inView && window.innerWidth > 768) {
       let start = 0;
       let end = 15;
@@ -54,7 +57,7 @@ export default function About() {
               ref={ref}
               className="absolute right-0 top-0 flex items-center justify-center gap-4 rounded-bl-lg rounded-tr-lg bg-primary p-3 font-bold text-white lg:gap-6 lg:p-5"
             >
-              {window.innerWidth > 768 ? (
+              {isClient && window.innerWidth > 768 ? (
                 <p className="text-4xl font-bold lg:text-6xl">{count}</p>
               ) : (
                 <p className="text-4xl font-bold lg:text-6xl">15</p>
