@@ -32,9 +32,10 @@ const gotham = localFont({
 });
 
 export const metadata: Metadata = {
-  // metadataBase: new URL("https://ferpan.com.br"),
+  metadataBase: new URL("https://asteriuz.github.io/ferpan"),
   title: "Ferpan",
-  description: "Artefatos de ferro de alta qualidade: grades, portões, móveis e mais. Descubra a durabilidade e o design único da Ferpan",
+  description:
+    "Artefatos de ferro de alta qualidade: grades, portões, móveis e mais. Descubra a durabilidade e o design único da Ferpan",
   alternates: {
     canonical: "./",
   },
@@ -51,7 +52,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <body
         data-theme="light"
-        className={`${poppins.variable} ${gotham.variable} ${bebas.variable} vsc-initialized min-h-screen min-w-full bg-white font-body text-semiblack flex flex-col justify-between`}
+        className={`${poppins.variable} ${gotham.variable} ${bebas.variable} vsc-initialized flex min-h-screen min-w-full flex-col justify-between bg-white font-body text-semiblack`}
       >
         <Header />
         {children}

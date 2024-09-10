@@ -81,7 +81,7 @@ const HeroCarousel: React.FC<HeroCarouselProps> = ({ slides }) => {
                     <Link
                       href="#contato"
                       passHref
-                      className="rounded-lg bg-primary px-6 py-3 text-white shadow-2xl"
+                      className="rounded-lg bg-primary px-6 py-3 text-white shadow-2xl transition-colors hover:bg-primary-hover"
                     >
                       Contato
                     </Link>
@@ -95,22 +95,25 @@ const HeroCarousel: React.FC<HeroCarouselProps> = ({ slides }) => {
 
       {/* Navigation arrows for larger screens */}
       <button
-        className="absolute left-6 top-1/2 hidden -translate-y-1/2 transform rounded-full bg-primary px-4 py-4 text-xl text-white lg:block"
+        className="absolute left-6 top-1/2 hidden -translate-y-1/2 transform rounded-full bg-primary px-4 py-4 text-xl text-white transition-colors hover:bg-primary-hover lg:block"
         onClick={scrollPrev}
+        aria-label="Slide anterior"
       >
         <IoArrowBack />
       </button>
       <button
-        className="absolute right-6 top-1/2 hidden -translate-y-1/2 transform rounded-full bg-primary px-4 py-4 text-xl text-white lg:block"
+        className="absolute right-6 top-1/2 hidden -translate-y-1/2 transform rounded-full bg-primary px-4 py-4 text-xl text-white transition-colors hover:bg-primary-hover lg:block"
         onClick={scrollNext}
+        aria-label="Próximo slide"
       >
         <IoArrowForward />
       </button>
 
       <Link
-        href="#produtos"
+        href="#sobre"
         passHref
         className="scroll-down-arrow-hero absolute bottom-12 left-1/2 z-40 mx-auto hidden -translate-x-1/2 cursor-pointer text-center lg:block"
+        aria-label="Scrolle para baixo para saber mais"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -133,6 +136,7 @@ const HeroCarousel: React.FC<HeroCarouselProps> = ({ slides }) => {
         {slides.map((_, index) => (
           <button
             key={index}
+            aria-label={`Go to slide ${index + 1}`}
             className={`h-3 w-3 rounded-full ${
               index === selectedIndex ? "bg-primary" : "bg-cinza"
             }`}

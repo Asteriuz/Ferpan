@@ -1,6 +1,9 @@
+'use client';
+
 import HeroCarousel from "@/components/Home/Utils/HeroCarousel";
 import hero1 from "@/assets/bg/hero1.webp";
 import hero2 from "@/assets/bg/hero2.webp";
+import FadeInSection from "./Utils/FadeInSection";
 
 const slides = [
   {
@@ -25,8 +28,8 @@ const slides = [
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative h-[617px] lg:h-screen">
-      <HeroCarousel slides={slides} />
-    </section>
+      <section id="hero" className="relative h-[617px] lg:h-screen">
+        <HeroCarousel slides={slides} />
+      </section>
   );
 }

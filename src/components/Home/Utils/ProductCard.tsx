@@ -17,6 +17,7 @@ export default function ProductCard(props: ProductCardProps) {
             src={props.image}
             fill
             style={{ objectFit: "cover" }}
+            loading="lazy"
           />
         </div>
         {props.promotion && (
@@ -31,7 +32,7 @@ export default function ProductCard(props: ProductCardProps) {
           <p className="text-cinza-text text-base">{props.description}</p>
         </div>
         <div className="mt-auto">
-          <button className="rounded-lg bg-primary px-4 py-2 text-white">
+          <button className="rounded-lg bg-primary px-4 py-2 text-white hover:bg-primary-hover transition-colors">
             Comprar
           </button>
         </div>
