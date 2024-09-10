@@ -6,6 +6,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import FadeInSection from "./Utils/FadeInSection";
+import BigIron from "@/assets/about/big-iron.webp";
+import SmallIron from "@/assets/about/small-iron.webp";
 
 export default function About() {
   const [count, setCount] = useState(0);
@@ -45,7 +47,7 @@ export default function About() {
         <div className="lg:gap-18 grid max-w-screen-xl grid-cols-1 gap-20 rounded-lg px-8 lg:grid-cols-2">
           <div className="relative">
             <Image
-              src="https://metropolitanhost.com/themes/templatemoster/html/steeloten/assets/img/home-1/570x420.jpg"
+              src={BigIron.src}
               alt="Metal"
               width={570}
               height={420}
@@ -69,7 +71,7 @@ export default function About() {
             </div>
             <div className="border-5 absolute -bottom-14 -left-7 flex items-center justify-center gap-6 rounded-lg border-[12px] border-white lg:-left-10 lg:border-[20px]">
               <Image
-                src="https://metropolitanhost.com/themes/templatemoster/html/steeloten/assets/img/home-1/275x200.jpg"
+                src={SmallIron.src}
                 alt="Metal"
                 width={299.25}
                 height={220.5}

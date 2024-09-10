@@ -27,19 +27,19 @@ export default function Footer() {
               <Logo
                 id="logo-nav"
                 aria-label="Logo da Ferpan"
-                className="my-6 cursor-pointer duration-300 ease-in-out hover:scale-110 md:my-0 h-24 md:hover:scale-110"
+                className="my-6 h-24 cursor-pointer duration-300 ease-in-out hover:scale-110 md:my-0 md:hover:scale-110"
               />
             </Link>
           </div>
-          <div className="grid grid-cols-1 gap-8 text-center lg:w-10/12 lg:grid-cols-[2fr,2fr,2fr,1fr] lg:gap-10 lg:text-left">
+          <div className="grid grid-cols-1 gap-8 text-center lg:w-10/12 lg:grid-cols-[2.2fr,2fr,2fr,1fr] lg:gap-10 lg:text-left">
             <FooterCategory
               title="Contato"
               delay={3}
               activeLink={true}
               links={[
                 {
-                  text: "(11) 94077-5846",
-                  href: "tel:+5511940775846",
+                  text: "(11) 3501-2426",
+                  href: "tel:+551135012426",
                   renderIcon: (className) => (
                     <IoCallOutline className={className} />
                   ),
@@ -54,8 +54,8 @@ export default function Footer() {
                   color: "text-green-500",
                 },
                 {
-                  text: ["ferpan@gmail.com"],
-                  href: "mailto:ferpan@gmail.com",
+                  text: ["vendasferpan@gmail.com"],
+                  href: "mailto:vendasferpan@gmail.com",
                   renderIcon: (className) => (
                     <IoMailOutline className={className} />
                   ),

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import ProductCard from "./Utils/ProductCard";
 import Elotrodo from "@/assets/products/eletrodo.webp";
@@ -89,7 +89,7 @@ export default function Product() {
           />
           <ProductCard
             title="Painel wall 2.50x1.20"
-            description="Painel metálico durável, ideal para revestimentos e divisórias com acabamento superior."
+            description="Painel durável, ideal para revestimentos e divisórias com acabamento superior."
             promotion
             image={PainelWall.src}
           />

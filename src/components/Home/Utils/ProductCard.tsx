@@ -28,7 +28,7 @@ export default function ProductCard(props: ProductCardProps) {
           </div>
         )}
       </div>
-      <div className="flex flex-grow flex-col gap-5 p-4">
+      <div className="flex flex-grow flex-col gap-5 p-4 pb-5">
         <div className="flex flex-grow flex-col gap-2">
           <h3 className="text-xl font-bold">{props.title}</h3>
           <p className="text-base text-cinza-text">{props.description}</p>
