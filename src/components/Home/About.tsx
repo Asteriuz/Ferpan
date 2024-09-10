@@ -80,7 +80,7 @@ export default function About() {
           </div>
           <div className="flex flex-col justify-center gap-5">
             <p className="text-lg font-bold text-primary">Sobre nós</p>
-            <h2 className="text-5xl font-bold">
+            <h2 className="text-5xl font-bold leading-tight">
               Melhor AÇO, <span className="text-primary">SEM RISCO</span>
             </h2>
             <h3 className="text-2xl font-bold">
