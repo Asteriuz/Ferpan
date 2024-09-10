@@ -121,7 +121,7 @@ export default function Header() {
         <div className="navbar-end z-50 hidden lg:flex">
           <Link
             aria-label="Fale Conosco"
-            href="https://wa.me/5511966017667"
+            href="https://wa.me/5511940775846"
             target="_blank"
             className="flex items-center gap-2 rounded-lg bg-primary p-3 text-center text-base font-bold text-white shadow-md duration-300 ease-in-out hover:bg-primary-hover hover:shadow-xl sm:mr-10 sm:px-7 sm:py-3 sm:hover:-translate-y-2"
           >

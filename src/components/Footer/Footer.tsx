@@ -186,7 +186,7 @@ export default function Footer() {
           </div>
           <Link
             target="_blank"
-            href="https://wa.me/5511966017667"
+            href="https://wa.me/5511940775846"
             className="bold flex items-center justify-center gap-2 rounded-lg  bg-primary p-4 text-center text-xl font-bold uppercase text-white shadow-lg duration-300 ease-in-out hover:bg-primary-hover sm:text-2xl"
           >
             <IoLogoWhatsapp className="text-[40px]" />

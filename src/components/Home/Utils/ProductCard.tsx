@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type ProductCardProps = {
   title: string;
@@ -8,8 +9,9 @@ type ProductCardProps = {
 };
 
 export default function ProductCard(props: ProductCardProps) {
+  const href = `https://wa.me/5511940775846?text=Olá, gostaria de saber sobre o produto ${props.title}`;
   return (
-    <div className="border-cinza-border flex max-w-96 lg:w-96 flex-col overflow-hidden rounded-lg border shadow-lg">
+    <div className="flex max-w-96 flex-col overflow-hidden rounded-lg border border-cinza-border shadow-lg lg:w-96">
       <div className="relative">
         <div className="h-80 bg-white">
           <Image
@@ -29,12 +31,14 @@ export default function ProductCard(props: ProductCardProps) {
       <div className="flex flex-grow flex-col gap-5 p-4">
         <div className="flex flex-grow flex-col gap-2">
           <h3 className="text-xl font-bold">{props.title}</h3>
-          <p className="text-cinza-text text-base">{props.description}</p>
+          <p className="text-base text-cinza-text">{props.description}</p>
         </div>
         <div className="mt-auto">
-          <button className="rounded-lg bg-primary px-4 py-2 text-white hover:bg-primary-hover transition-colors">
+          <Link
+            href={href}
+           className="rounded-lg bg-primary px-4 py-2 text-white transition-colors hover:bg-primary-hover">
             Comprar
-          </button>
+          </Link>
         </div>
       </div>
     </div>

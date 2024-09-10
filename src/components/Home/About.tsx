@@ -15,7 +15,7 @@ export default function About() {
   });
 
   useEffect(() => {
-    if (inView) {
+    if (inView && window.innerWidth > 768) {
       let start = 0;
       let end = 15;
       let duration = 2000;
@@ -54,7 +54,11 @@ export default function About() {
               ref={ref}
               className="absolute right-0 top-0 flex items-center justify-center gap-4 rounded-bl-lg rounded-tr-lg bg-primary p-3 font-bold text-white lg:gap-6 lg:p-5"
             >
-              <p className="text-4xl font-bold lg:text-6xl">{count}</p>
+              {window.innerWidth > 768 ? (
+                <p className="text-4xl font-bold lg:text-6xl">{count}</p>
+              ) : (
+                <p className="text-4xl font-bold lg:text-6xl">15</p>
+              )}
               <div className="text-xl leading-none lg:text-3xl">
                 <p>Anos de</p>
                 <p>experiência</p>
@@ -88,7 +92,7 @@ export default function About() {
             </p>
             <Link
               target="_blank"
-              href="https://wa.me/5511966017667"
+              href="https://wa.me/5511940775846"
               className="bold mr-auto flex items-center justify-center gap-2 rounded-lg bg-primary p-4 text-center text-lg font-bold uppercase text-white shadow-lg duration-300 ease-in-out hover:bg-primary-hover md:text-xl"
             >
               <IoLogoWhatsapp className="text-3xl" />

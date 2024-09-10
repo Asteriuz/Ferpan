@@ -30,15 +30,17 @@
   color: #ffffff !important;
 }
 
-.fade-in {
-  opacity: 0;
-  transform: translateY(100px);
-  transition:
-    opacity 0.6s ease-in-out,
-    transform 0.6s ease-in-out;
-}
+@media (min-width: 768px) {
+  .fade-in {
+    opacity: 0;
+    transform: translateY(100px);
+    transition:
+      opacity 0.6s ease-in-out,
+      transform 0.6s ease-in-out;
+  }
 
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
