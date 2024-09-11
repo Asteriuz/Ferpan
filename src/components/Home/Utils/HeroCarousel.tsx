@@ -132,7 +132,6 @@ const HeroCarousel: React.FC<HeroCarouselProps> = ({ slides }) => {
         </svg>
       </Link>
 
-      {/* Indicators for mobile */}
       <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 transform gap-2 lg:hidden">
         {slides.map((_, index) => (
           <button
