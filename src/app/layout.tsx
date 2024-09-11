@@ -32,7 +32,7 @@ const gotham = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://asteriuz.github.io/ferpan"),
+  metadataBase: new URL("https://ferpancomerciodeferro.com.br"),
   title: "Ferpan",
   description:
     "Artefatos de ferro de alta qualidade: grades, portões, móveis e mais. Descubra a durabilidade e o design único da Ferpan",
@@ -61,8 +61,8 @@ export default function RootLayout({
       </body>
       {(DEV && (
         <>
-          <Script src="ferpan/js/nav.js"></Script>
-          <Script src="ferpan/js/util.js" defer></Script>
+          <Script src="js/nav.js"></Script>
+          <Script src="js/util.js" defer></Script>
         </>
       )) || (
         <>
