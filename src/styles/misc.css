@@ -44,3 +44,9 @@
     transform: translateY(0);
   }
 }
+
+@media screen and (max-height: 800px) {
+  .scroll-down-arrow-hero {
+    display: none;
+  }
+}

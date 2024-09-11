@@ -31,7 +31,7 @@ export default function Product() {
           </h2>
           <hr className="obs-hidden obs-visible mx-auto my-2 mt-6 h-1 w-52 rounded border-0 bg-primary"></hr>
         </div>
-        <div className="grid max-w-screen-xl grid-cols-1 gap-x-24 gap-y-12 lg:grid-cols-2 lg:gap-y-24 xl:grid-cols-3">
+        <div className="grid  grid-cols-1 gap-x-14 min-[1400px]:gap-x-24 gap-y-12 lg:grid-cols-2 lg:gap-y-24 xl:grid-cols-3">
           <ProductCard
             title="Eletrodo (6013/7018/inox/ferro fundido)"
             description="Eletrodos de alta qualidade para soldagem eficiente em aço carbono, inox e ferro fundido."

@@ -112,7 +112,8 @@ const HeroCarousel: React.FC<HeroCarouselProps> = ({ slides }) => {
       <Link
         href="#sobre"
         passHref
-        className="scroll-down-arrow-hero absolute bottom-12 left-1/2 z-40 mx-auto hidden -translate-x-1/2 cursor-pointer text-center lg:block"
+        className="scroll-down-arrow-hero absolute bottom-6
+         left-1/2 z-40 mx-auto hidden -translate-x-1/2 cursor-pointer text-center lg:block"
         aria-label="Scrolle para baixo para saber mais"
       >
         <svg

@@ -28,7 +28,10 @@ const config: Config = {
   theme: {
     screens: {
       xs: "375px",
-      ...defaultTheme.screens,
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
     },
     extend: {
       colors: {
@@ -52,10 +55,10 @@ const config: Config = {
         transwhite: {
           DEFAULT: "#ffffff75",
         },
-      },
-      screens: {
-        tall: { raw: "(min-height: 800px)" },
-      },
+      }
+      // screens: {
+      //   tall: { raw: "(min-height: 800px)" },
+      // },
     },
     fontFamily: {
       heading: ["var(--font-gotham)"],
