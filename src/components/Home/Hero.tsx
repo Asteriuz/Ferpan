@@ -9,7 +9,7 @@ const slides = [
   {
     imageUrl: hero1.src,
     title: "Qualidade e Durabilidade em Artefatos de Ferro",
-    toptitle: "Soluções Sob Medida para Sua Casa",
+    toptitle: "Garantia de um projeto com excelência",
     subtitle:
       "Deixe Seus ambientes mais seguros, elegantes e resilientes com nossos produtos em ferro. Projetados para durar e impressionar",
     button1: "Saiba Mais",
